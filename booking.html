@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking | LetsKite</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo"><img src="assets/images/logo.svg" alt="LetsKite Logo"></a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="home2.html">Home 2</a>
+        <a href="lessons.html">Lessons</a>
+        <a href="instructors.html">Instructors</a>
+        <a href="booking.html" class="active">Booking</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="nav-actions">
+        <button class="icon-btn theme-toggle" aria-label="Toggle Theme"></button>
+        <button class="icon-btn rtl-toggle" aria-label="Toggle RTL"></button>
+        <a href="login.html" class="btn btn-primary">Login</a>
+        <button class="icon-btn hamburger" aria-label="Open Menu"><i class="ph ph-list"></i></button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="drawer-overlay"></div>
+  <div class="drawer">
+    <div class="drawer-header">
+      <a href="index.html" class="logo"><img src="assets/images/logo.svg" alt="LetsKite Logo"></a>
+      <button class="icon-btn drawer-close"><i class="ph ph-x"></i></button>
+    </div>
+    <div class="drawer-actions">
+      <button class="icon-btn theme-toggle"></button>
+      <button class="icon-btn rtl-toggle"></button>
+    </div>
+    <div class="drawer-links">
+      <a href="index.html">Home</a>
+      <a href="home2.html">Home 2</a>
+      <a href="lessons.html">Lessons</a>
+      <a href="instructors.html">Instructors</a>
+      <a href="booking.html">Booking</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+      <a href="login.html" class="btn btn-primary text-center" style="margin-top: 16px; color:#fff;">Login</a>
+    </div>
+  </div>
+
+  <main style="padding-top: 80px;">
+    <!-- Page Header -->
+    <section class="page-header" style="background-image: url('assets/images/hero-booking.png');">
+      <div class="container">
+        <h1>Book Your Session</h1>
+        <p class="subtext">Select your lesson type, date, and secure your spot.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div style="display: grid; grid-template-columns: 2fr 1fr; gap: var(--space-6);" class="booking-grid">
+          
+          <!-- Booking Form -->
+          <div style="background: var(--card-bg); padding: var(--space-6); border-radius: var(--radius); box-shadow: var(--shadow); border: 1px solid var(--card-border);">
+            <h2 style="text-align: left; margin-bottom: var(--space-4);">Lesson Details</h2>
+            <!-- Formspree placeholder -->
+            <form id="bookingForm" class="needs-validation" action="https://formspree.io/f/placeholder" method="POST" novalidate>
+              <div class="grid" style="grid-template-columns: 1fr 1fr; gap: var(--space-3);">
+                <div class="form-group">
+                  <label for="firstName">First Name *</label>
+                  <input type="text" id="firstName" class="form-control" required>
+                  <div class="error-msg"></div>
+                </div>
+                <div class="form-group">
+                  <label for="lastName">Last Name *</label>
+                  <input type="text" id="lastName" class="form-control" required>
+                  <div class="error-msg"></div>
+                </div>
+              </div>
+
+              <div class="grid" style="grid-template-columns: 1fr 1fr; gap: var(--space-3);">
+                <div class="form-group">
+                  <label for="email">Email *</label>
+                  <input type="email" id="email" class="form-control" required>
+                  <div class="error-msg"></div>
+                </div>
+                <div class="form-group">
+                  <label for="phone">Phone Number</label>
+                  <input type="tel" id="phone" class="form-control" pattern="[0-9]*">
+                  <div class="error-msg"></div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="lessonType">Lesson Type *</label>
+                <select id="lessonType" class="form-control" required>
+                  <option value="beginner">Beginner Course - €150/session</option>
+                  <option value="intermediate">Intermediate - €120/session</option>
+                  <option value="advanced">Advanced Coaching - €200/session</option>
+                  <option value="wingfoil">Wing Foil Discovery - €180/session</option>
+                </select>
+                <div class="error-msg"></div>
+              </div>
+
+              <div class="grid" style="grid-template-columns: 1fr 1fr; gap: var(--space-3);">
+                <div class="form-group">
+                  <label for="date">Preferred Date *</label>
+                  <input type="date" id="date" class="form-control" required>
+                  <div class="error-msg"></div>
+                </div>
+                <div class="form-group">
+                  <label for="time">Preferred Time *</label>
+                  <select id="time" class="form-control" required>
+                    <option value="">Select a time</option>
+                    <option value="morning">Morning (9:00 AM)</option>
+                    <option value="afternoon">Afternoon (2:00 PM)</option>
+                  </select>
+                  <div class="error-msg"></div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="participants">Number of Participants *</label>
+                <input type="number" id="participants" class="form-control" min="1" max="4" value="1" required>
+                <div class="error-msg"></div>
+              </div>
+
+              <div class="form-group">
+                <label for="requests">Special Requests</label>
+                <textarea id="requests" class="form-control" rows="4" placeholder="Any previous experience or gear requirements?"></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-full" style="margin-top: var(--space-2);">Confirm Booking</button>
+            </form>
+          </div>
+
+          <!-- Sidebar -->
+          <div>
+            <div style="background: var(--card-bg); padding: var(--space-4); border-radius: var(--radius); box-shadow: var(--shadow); border: 1px solid var(--card-border); margin-bottom: var(--space-4);">
+              <h3 style="margin-bottom: var(--space-3);">Order Summary</h3>
+              <div style="display: flex; justify-content: space-between; margin-bottom: var(--space-2); color: var(--text-muted);">
+                <span>Base Price:</span>
+                <span id="basePriceDisplay">Variable</span>
+              </div>
+              <hr style="border: none; border-top: 1px solid var(--card-border); margin: var(--space-2) 0;">
+              <div style="display: flex; justify-content: space-between; font-weight: bold; font-size: 1.25rem;">
+                <span>Total Estimated:</span>
+                <span id="totalPrice" style="color: var(--primary);">€150</span>
+              </div>
+              <p style="font-size: 0.875rem; color: var(--text-muted); margin-top: var(--space-2);">* Payment is taken on-site or via deposit link sent after confirmation.</p>
+              <!-- Stripe button placeholder comment -->
+              <!-- <button class="btn btn-primary btn-full mt-2">Pay Deposit via Stripe</button> -->
+            </div>
+
+            <!-- Calendar Placeholder -->
+            <div style="background: var(--card-bg); padding: var(--space-4); border-radius: var(--radius); box-shadow: var(--shadow); border: 1px solid var(--card-border); text-align: center;">
+              <h3 style="margin-bottom: var(--space-3);">Availability</h3>
+              <i class="ph ph-calendar-check" style="font-size: 3rem; color: var(--primary); margin-bottom: var(--space-2);"></i>
+              <p style="color: var(--text-muted); font-size: 0.875rem;">Select your date in the form. We run lessons daily, weather permitting.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <style>
+      @media(max-width: 768px) { .booking-grid { grid-template-columns: 1fr !important; } }
+    </style>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="index.html" class="logo mb-4"><img src="assets/images/logo.svg" alt="LetsKite Logo"></a>
+          <p style="color: var(--text-muted);">Premier kiteboarding and wing foil school. Experience the thrill of wind and water safely.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="instructors.html">Instructors</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Lessons</h4>
+          <ul>
+            <li><a href="lessons.html">Beginner Kite</a></li>
+            <li><a href="lessons.html">Advanced Coaching</a></li>
+            <li><a href="lessons.html">Wing Foiling</a></li>
+            <li><a href="lessons.html">Equipment Rental</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact & Social</h4>
+          <ul style="margin-bottom: var(--space-3);">
+            <li><i class="ph ph-map-pin"></i> 123 Beachfront Rd</li>
+            <li><i class="ph ph-phone"></i> +1 234 567 8900</li>
+            <li><i class="ph ph-envelope"></i> hello@letskite.com</li>
+          </ul>
+          <div class="social-icons">
+            <a href="#" aria-label="Instagram"><i class="ph ph-instagram-logo"></i></a>
+            <a href="#" aria-label="Facebook"><i class="ph ph-facebook-logo"></i></a>
+            <a href="#" aria-label="YouTube"><i class="ph ph-youtube-logo"></i></a>
+            <a href="#" aria-label="TikTok"><i class="ph ph-tiktok-logo"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 LetsKite. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/booking.js"></script>
+</body>
+</html>

@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instructors | LetsKite</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo"><img src="assets/images/logo.svg" alt="LetsKite Logo"></a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="home2.html">Home 2</a>
+        <a href="lessons.html">Lessons</a>
+        <a href="instructors.html" class="active">Instructors</a>
+        <a href="booking.html">Booking</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="nav-actions">
+        <button class="icon-btn theme-toggle" aria-label="Toggle Theme"></button>
+        <button class="icon-btn rtl-toggle" aria-label="Toggle RTL"></button>
+        <a href="login.html" class="btn btn-primary">Login</a>
+        <button class="icon-btn hamburger" aria-label="Open Menu"><i class="ph ph-list"></i></button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="drawer-overlay"></div>
+  <div class="drawer">
+    <div class="drawer-header">
+      <a href="index.html" class="logo"><img src="assets/images/logo.svg" alt="LetsKite Logo"></a>
+      <button class="icon-btn drawer-close"><i class="ph ph-x"></i></button>
+    </div>
+    <div class="drawer-actions">
+      <button class="icon-btn theme-toggle"></button>
+      <button class="icon-btn rtl-toggle"></button>
+    </div>
+    <div class="drawer-links">
+      <a href="index.html">Home</a>
+      <a href="home2.html">Home 2</a>
+      <a href="lessons.html">Lessons</a>
+      <a href="instructors.html">Instructors</a>
+      <a href="booking.html">Booking</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+      <a href="login.html" class="btn btn-primary text-center" style="margin-top: 16px; color:#fff;">Login</a>
+    </div>
+  </div>
+
+  <main style="padding-top: 80px;">
+    <!-- Page Header -->
+    <section class="page-header" style="background-image: url('assets/images/hero-instructors.png');">
+      <div class="container">
+        <h1>Meet the Team</h1>
+        <p class="subtext">Passionate professionals dedicated to your progress and safety.</p>
+      </div>
+    </section>
+    <!-- School Story -->
+    <section>
+      <div class="container">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-6); align-items: center;"
+          class="story-grid">
+          <div style="text-align: center;">
+            <h2 style="text-align: center;">Our Mission</h2>
+            <p style="color: var(--text-muted); font-size: 1.1rem; margin-bottom: var(--space-3);">Founded in 2018,
+              LetsKite was born from a passion for the ocean and a desire to make wind sports accessible to everyone.
+              Our safety culture is unmatched, and our proven teaching methodology has helped thousands discover the
+              thrill of kiteboarding.</p>
+            <div style="display: flex; gap: var(--space-4); justify-content: center;">
+              <div>
+                <div style="font-size: 2.5rem; font-family: var(--font-heading); color: var(--primary);">2000+</div>
+                <div style="color: var(--text-muted);">Students Trained</div>
+              </div>
+              <div>
+                <div style="font-size: 2.5rem; font-family: var(--font-heading); color: var(--primary);">7</div>
+                <div style="color: var(--text-muted);">Years Active</div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <img src="assets/images/school-spot.jpg" alt="School spot"
+              style="border-radius: var(--radius); box-shadow: var(--shadow); width: 100%; object-fit: cover;">
+          </div>
+        </div>
+      </div>
+    </section>
+    <style>
+      @media(max-width: 768px) {
+        .story-grid {
+          grid-template-columns: 1fr !important;
+          text-align: center;
+        }
+
+        .story-grid h2 {
+          text-align: center !important;
+        }
+
+        .story-grid>div>div {
+          justify-content: center;
+        }
+      }
+    </style>
+    <!-- Team Grid -->
+    <section style="background: var(--secondary);">
+      <div class="container">
+        <h2>Instructors</h2>
+        <p class="subtext">Fully certified, experienced, and stoked to get you on the water.</p>
+        <div class="instructors-3-grid">
+          <div class="card">
+            <img src="assets/images/instructor-alex.jpg" alt="Instructor Alex" loading="lazy">
+            <h3 class="card-title">Alex Mercer</h3>
+            <p style="color: var(--primary); font-weight: bold; margin-bottom: 8px;">Head Instructor</p>
+            <p class="card-body">IKO Level 3, VDWS • 10 Years Experience<br>Specialties: Advanced Freestyle, Wave Riding
+            </p>
+          </div>
+          <div class="card">
+            <img src="assets/images/instructor-sarah.jpg" alt="Instructor Sarah" loading="lazy">
+            <h3 class="card-title">Sarah Jenkins</h3>
+            <p style="color: var(--primary); font-weight: bold; margin-bottom: 8px;">Senior Instructor</p>
+            <p class="card-body">IKO Level 2, First Aid • 5 Years Experience<br>Specialties: Beginners, Wing Foiling</p>
+          </div>
+          <div class="card">
+            <img src="assets/images/instructor-diego.jpg" alt="Instructor Diego" loading="lazy">
+            <h3 class="card-title">Diego Costa</h3>
+            <p style="color: var(--primary); font-weight: bold; margin-bottom: 8px;">Foil Specialist</p>
+            <p class="card-body">IKO Level 2 • 6 Years Experience<br>Specialties: Hydrofoil, Big Air</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <style>
+      /* Instructors 3-card grid */
+      .instructors-3-grid {
+        display: grid;
+        gap: var(--space-4);
+        grid-template-columns: repeat(3, 1fr);
+        align-items: stretch;
+      }
+
+      .instructors-3-grid .card {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+
+      /* Tablet (600px–1023px): 2-col + 3rd card centred */
+      @media (min-width: 600px) and (max-width: 1023px) {
+        .instructors-3-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        .instructors-3-grid .card:last-child {
+          grid-column: 1 / -1;
+          max-width: calc(50% - var(--space-2));
+          margin: 0 auto;
+          width: 100%;
+        }
+      }
+
+      /* Mobile (<600px): single column */
+      @media (max-width: 599px) {
+        .instructors-3-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .instructors-3-grid .card:last-child {
+          max-width: 100%;
+          margin: 0;
+        }
+      }
+    </style>
+
+    <!-- FAQs -->
+    <section>
+      <div class="container">
+        <h2>Frequently Asked Questions</h2>
+        <p class="subtext">Everything you need to know before hitting the water with us.</p>
+        <div class="faq-list">
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Do I need any prior experience to join a lesson?</span>
+              <i class="ph ph-plus faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+              <p>Not at all! Our Beginner IKO course is designed for complete newcomers. We start with theory and safety
+                on the beach before ever touching the water. All you need is a willingness to learn and a sense of
+                adventure.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>What is the minimum age requirement?</span>
+              <i class="ph ph-plus faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+              <p>Students must be at least 12 years old to join our lessons. Participants under 18 require written
+                parental consent before their first session. We also offer dedicated junior programs during school
+                holiday periods.</p>
+            </div>
+          </div>
+
+
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Is equipment provided or do I need to bring my own?</span>
+              <i class="ph ph-plus faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+              <p>All equipment is included in your lesson price — kites, boards, harnesses, helmets, and wetsuits. We
+                use the latest gear from Duotone, North, and Cabrinha updated every season. If you own your own gear and
+                prefer to use it, just let us know in advance.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>How do I pay and what is the cancellation policy?</span>
+              <i class="ph ph-plus faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+              <p>Payment is made on-site by cash or card, or via a deposit link sent after your booking is confirmed.
+                Cancellations made more than 48 hours before your lesson receive a full refund. Cancellations within 48
+                hours forfeit the deposit.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <style>
+      .faq-list {
+        max-width: 800px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-2);
+      }
+
+      .faq-item {
+        border: 1px solid var(--card-border);
+        border-radius: var(--radius);
+        background: var(--card-bg);
+        overflow: hidden;
+      }
+
+      .faq-question {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: var(--space-3) var(--space-4);
+        background: none;
+        border: none;
+        cursor: pointer;
+        color: var(--text-color);
+        font-family: var(--font-body);
+        font-size: 1.05rem;
+        font-weight: 600;
+        text-align: left;
+        gap: var(--space-3);
+        transition: background var(--transition);
+      }
+
+      .faq-question:hover {
+        background: var(--secondary);
+      }
+
+      .faq-question[aria-expanded="true"] {
+        color: var(--primary);
+      }
+
+      .faq-icon {
+        font-size: 1.25rem;
+        flex-shrink: 0;
+        transition: transform var(--transition);
+        color: var(--primary);
+      }
+
+      .faq-question[aria-expanded="true"] .faq-icon {
+        transform: rotate(45deg);
+      }
+
+      .faq-answer {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.4s ease, padding 0.3s ease;
+        padding: 0 var(--space-4);
+      }
+
+      .faq-answer p {
+        color: var(--text-muted);
+        font-size: 0.975rem;
+        line-height: 1.75;
+        padding-bottom: var(--space-3);
+      }
+
+      .faq-item.open .faq-answer {
+        max-height: 300px;
+        padding-top: 0;
+      }
+    </style>
+
+    <script>
+      document.querySelectorAll('.faq-question').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const item = btn.closest('.faq-item');
+          const isOpen = item.classList.contains('open');
+          document.querySelectorAll('.faq-item').forEach(i => {
+            i.classList.remove('open');
+            i.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+          });
+          if (!isOpen) {
+            item.classList.add('open');
+            btn.setAttribute('aria-expanded', 'true');
+          }
+        });
+      });
+    </script>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="index.html" class="logo mb-4"><img src="assets/images/logo.svg" alt="LetsKite Logo"></a>
+          <p style="color: var(--text-muted);">Premier kiteboarding and wing foil school. Experience the thrill of wind
+            and water safely.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="instructors.html">Instructors</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Lessons</h4>
+          <ul>
+            <li><a href="lessons.html">Beginner Kite</a></li>
+            <li><a href="lessons.html">Advanced Coaching</a></li>
+            <li><a href="lessons.html">Wing Foiling</a></li>
+            <li><a href="lessons.html">Equipment Rental</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact & Social</h4>
+          <ul style="margin-bottom: var(--space-3);">
+            <li><i class="ph ph-map-pin"></i> 123 Beachfront Rd</li>
+            <li><i class="ph ph-phone"></i> +1 234 567 8900</li>
+            <li><i class="ph ph-envelope"></i> hello@letskite.com</li>
+          </ul>
+          <div class="social-icons">
+            <a href="#" aria-label="Instagram"><i class="ph ph-instagram-logo"></i></a>
+            <a href="#" aria-label="Facebook"><i class="ph ph-facebook-logo"></i></a>
+            <a href="#" aria-label="YouTube"><i class="ph ph-youtube-logo"></i></a>
+            <a href="#" aria-label="TikTok"><i class="ph ph-tiktok-logo"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 LetsKite. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

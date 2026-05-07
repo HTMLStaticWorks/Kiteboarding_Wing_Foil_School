@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LetsKite | Kiteboarding & Wing Foil School</title>
+  <meta name="description"
+    content="Learn to Kite and Foil with certified instructors. Top equipment, safety-first, all skill levels.">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <!-- JSON-LD LocalBusiness Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SportsActivityLocation",
+    "name": "LetsKite",
+    "description": "Kiteboarding and Wing Foil School",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Coastal City",
+      "addressCountry": "US"
+    }
+  }
+  </script>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <img src="assets/images/logo.svg" alt="LetsKite Logo">
+      </a>
+      <div class="nav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="home2.html">Home 2</a>
+        <a href="lessons.html">Lessons</a>
+        <a href="instructors.html">Instructors</a>
+        <a href="booking.html">Booking</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="nav-actions">
+        <button class="icon-btn theme-toggle" aria-label="Toggle Theme"></button>
+        <button class="icon-btn rtl-toggle" aria-label="Toggle RTL"></button>
+        <a href="login.html" class="btn btn-primary">Login</a>
+        <button class="icon-btn hamburger" aria-label="Open Menu">
+          <i class="ph ph-list"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Drawer -->
+  <div class="drawer-overlay"></div>
+  <div class="drawer">
+    <div class="drawer-header">
+      <a href="index.html" class="logo"><img src="assets/images/logo.svg" alt="LetsKite Logo"></a>
+      <button class="icon-btn drawer-close" aria-label="Close Menu">
+        <i class="ph ph-x"></i>
+      </button>
+    </div>
+    <div class="drawer-actions">
+      <button class="icon-btn theme-toggle" aria-label="Toggle Theme"></button>
+      <button class="icon-btn rtl-toggle" aria-label="Toggle RTL"></button>
+    </div>
+    <div class="drawer-links">
+      <a href="index.html">Home</a>
+      <a href="home2.html">Home 2</a>
+      <a href="lessons.html">Lessons</a>
+      <a href="instructors.html">Instructors</a>
+      <a href="booking.html">Booking</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+      <a href="login.html" class="btn btn-primary text-center" style="margin-top: 16px; color:#fff;">Login</a>
+    </div>
+  </div>
+
+  <main>
+    <!-- Hero Section with Parallax & Typewriter -->
+    <section class="hero" style="background-image: url('assets/images/hero-home.png'); background-attachment: fixed;">
+      <div class="hero-content">
+        <h1 class="anim-fade-up"><span class="typewriter-text">Learn to Kite.</span></h1>
+        <p class="anim-fade-up anim-delay-1">Certified instructors, pristine waters, and state-of-the-art equipment.
+          Your adventure starts here.</p>
+        <a href="booking.html" class="btn btn-accent anim-fade-up anim-delay-2">Book Your First Lesson</a>
+      </div>
+    </section>
+
+    <!-- Why LetsKite -->
+    <section>
+      <div class="container">
+        <h2>Why LetsKite</h2>
+        <p class="subtext">We provide the highest standard of safety, instruction, and equipment to get you riding
+          confidently.</p>
+        <div class="index-3-grid">
+          <div class="card">
+            <img src="assets/images/iko-certified.jpg" alt="IKO Certified Instructor" loading="lazy">
+            <h3 class="card-title">IKO Certified</h3>
+            <p class="card-body">All our instructors hold international IKO certifications, ensuring safe and
+              progressive learning.</p>
+          </div>
+          <div class="card">
+            <img src="assets/images/safety-first.jpg" alt="Safety First on the Water" loading="lazy">
+            <h3 class="card-title">Safety First</h3>
+            <p class="card-body">We prioritize your safety with full boat support, radio helmets, and shallow water
+              spots.</p>
+          </div>
+          <div class="card">
+            <img src="assets/images/top-equipment.jpg" alt="Top Kiteboarding Equipment" loading="lazy">
+            <h3 class="card-title">Top Equipment</h3>
+            <p class="card-body">Learn on the newest gear from Duotone, North, and Cabrinha, updated every season.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Lesson Packages -->
+    <section style="background-color: var(--secondary);">
+      <div class="container">
+        <h2>Lesson Packages</h2>
+        <p class="subtext">From total beginner to advanced freestyle, we have a lesson plan tailored to your
+          progression.</p>
+        <div class="index-3-grid">
+          <div class="card">
+            <img src="assets/images/beginner-course.jpg" alt="Beginner Kiteboarding" loading="lazy">
+            <h3 class="card-title">Beginner Course</h3>
+            <p class="card-body">9 hours • €350<br>Master kite control, body dragging, and your first water starts.</p>
+            <a href="booking.html" class="btn btn-outline btn-full">Book Now</a>
+          </div>
+          <div class="card">
+            <img src="assets/images/wing-foil-discovery.jpg" alt="Wing Foil Lesson" loading="lazy">
+            <h3 class="card-title">Wing Foil Discovery</h3>
+            <p class="card-body">3 hours • €180<br>Learn the basics of handling the wing and balancing on the foil
+              board.</p>
+            <a href="booking.html" class="btn btn-outline btn-full">Book Now</a>
+          </div>
+          <div class="card">
+            <img src="assets/images/advanced-coaching.jpg" alt="Advanced Coaching" loading="lazy">
+            <h3 class="card-title">Advanced Coaching</h3>
+            <p class="card-body">2 hours • €150<br>Private sessions to nail those jumps, loops, and unhooked tricks.</p>
+            <a href="booking.html" class="btn btn-outline btn-full">Book Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <style>
+      /* Index page 3-card grid */
+      .index-3-grid {
+        display: grid;
+        gap: var(--space-4);
+        grid-template-columns: repeat(3, 1fr);
+        /* 3x1 on 1024px+ */
+        align-items: stretch;
+      }
+
+      .index-3-grid .card {
+        height: 100%;
+      }
+
+      /* Tablet (768px): 2-column with 3rd card centred */
+      @media (min-width: 600px) and (max-width: 1023px) {
+        .index-3-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        .index-3-grid .card:last-child {
+          grid-column: 1 / -1;
+          max-width: calc(50% - var(--space-2));
+          margin: 0 auto;
+          width: 100%;
+        }
+      }
+
+      /* Mobile (<600px): 1-column */
+      @media (max-width: 599px) {
+        .index-3-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .index-3-grid .card:last-child {
+          max-width: 100%;
+          margin: 0;
+        }
+      }
+    </style>
+
+    <!-- Spot Forecast Strip -->
+    <section>
+      <div class="container">
+        <h2>Live Wind Forecast</h2>
+        <p class="subtext">Current conditions at our top teaching spots.</p>
+        <div class="forecast-3-grid">
+          <div class="card">
+            <h3 class="card-title">Kite Beach</h3>
+            <div style="font-size: 2.5rem; color: var(--primary); font-family: var(--font-heading);">18 knots</div>
+            <p class="card-body">Direction: NE (Side-Onshore)<br>Waves: 0.5m • Rating: Excellent</p>
+          </div>
+          <div class="card">
+            <h3 class="card-title">Lagoon Point</h3>
+            <div style="font-size: 2.5rem; color: var(--primary); font-family: var(--font-heading);">15 knots</div>
+            <p class="card-body">Direction: N (Onshore)<br>Waves: Flat • Rating: Good</p>
+          </div>
+          <div class="card">
+            <h3 class="card-title">Foil Bay</h3>
+            <div style="font-size: 2.5rem; color: var(--primary); font-family: var(--font-heading);">12 knots</div>
+            <p class="card-body">Direction: E (Side-Shore)<br>Waves: 1.0m • Rating: Fair</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <style>
+      /* Forecast 3-card grid */
+      .forecast-3-grid {
+        display: grid;
+        gap: var(--space-4);
+        grid-template-columns: repeat(3, 1fr);
+        align-items: stretch;
+      }
+
+      .forecast-3-grid .card {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+
+      /* Tablet (600px–1023px): 2-col + 3rd card centred */
+      @media (min-width: 600px) and (max-width: 1023px) {
+        .forecast-3-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        .forecast-3-grid .card:last-child {
+          grid-column: 1 / -1;
+          max-width: calc(50% - var(--space-2));
+          margin: 0 auto;
+          width: 100%;
+        }
+      }
+
+      /* Mobile (<600px): single column */
+      @media (max-width: 599px) {
+        .forecast-3-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .forecast-3-grid .card:last-child {
+          max-width: 100%;
+          margin: 0;
+        }
+      }
+    </style>
+
+    <!-- Testimonials -->
+    <section style="background-color: var(--secondary);">
+      <div class="container">
+        <h2>What Our Students Say</h2>
+        <p class="subtext">Join hundreds of happy riders who learned with LetsKite.</p>
+        <div class="grid">
+
+          <div class="card" style="align-items: center; text-align: center;">
+            <img src="assets/images/avatar-sarah.jpg" alt="Sarah Jenkins"
+              style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; border: 3px solid var(--primary); margin-bottom: 16px;">
+            <div style="display: flex; gap: 8px; color: #ffcc00; font-size: 1.25rem; margin-bottom: 16px;">
+              <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i
+                class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+            </div>
+            <p class="card-body">"Incredible experience! The instructors are super patient and the radio helmets make a
+              huge difference. I was up and riding by day 3!"</p>
+            <h4 style="margin-bottom: 4px;">Sarah Jenkins 🇬🇧</h4>
+            <span style="color: var(--text-muted); font-size: 0.875rem;">Beginner Course</span>
+          </div>
+
+          <div class="card" style="align-items: center; text-align: center;">
+            <img src="assets/images/avatar-markus.jpg" alt="Markus Weber"
+              style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; border: 3px solid var(--primary); margin-bottom: 16px;">
+            <div style="display: flex; gap: 8px; color: #ffcc00; font-size: 1.25rem; margin-bottom: 16px;">
+              <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i
+                class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+            </div>
+            <p class="card-body">"Tried wing foiling for the first time. The gear was brand new and the spot was
+              perfect. Highly recommend LetsKite."</p>
+            <h4 style="margin-bottom: 4px;">Markus Weber 🇩🇪</h4>
+            <span style="color: var(--text-muted); font-size: 0.875rem;">Wing Foil Discovery</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- CTA -->
+    <section style="background-color: var(--primary); color: #fff;">
+      <div class="container text-center">
+        <h2 style="color: #fff;">Ready to Hit the Water?</h2>
+        <p class="subtext" style="color: rgba(255,255,255,0.8);">Check our availability and book your lesson today.</p>
+        <a href="booking.html" class="btn cta-white-btn">Book Your First Lesson</a>
+      </div>
+    </section>
+
+    <style>
+      .cta-white-btn {
+        background-color: #fff;
+        color: var(--primary);
+        transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .cta-white-btn:hover {
+        background-color: transparent;
+        color: #fff;
+        border: 2px solid #fff;
+        transform: translateY(-3px);
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+      }
+    </style>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="index.html" class="logo mb-4"><img src="assets/images/logo.svg" alt="LetsKite Logo"></a>
+          <p style="color: var(--text-muted);">Premier kiteboarding and wing foil school. Experience the thrill of wind
+            and water safely.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="instructors.html">Instructors</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Lessons</h4>
+          <ul>
+            <li><a href="lessons.html">Beginner Kite</a></li>
+            <li><a href="lessons.html">Advanced Coaching</a></li>
+            <li><a href="lessons.html">Wing Foiling</a></li>
+            <li><a href="lessons.html">Equipment Rental</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact & Social</h4>
+          <ul style="margin-bottom: var(--space-3);">
+            <li><i class="ph ph-map-pin"></i> 123 Beachfront Rd</li>
+            <li><i class="ph ph-phone"></i> +1 234 567 8900</li>
+            <li><i class="ph ph-envelope"></i> hello@letskite.com</li>
+          </ul>
+          <div class="social-icons">
+            <a href="#" aria-label="Instagram"><i class="ph ph-instagram-logo"></i></a>
+            <a href="#" aria-label="Facebook"><i class="ph ph-facebook-logo"></i></a>
+            <a href="#" aria-label="YouTube"><i class="ph ph-youtube-logo"></i></a>
+            <a href="#" aria-label="TikTok"><i class="ph ph-tiktok-logo"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 LetsKite. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

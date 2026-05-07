@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog | LetsKite</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo"><img src="assets/images/logo.svg" alt="LetsKite Logo"></a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="home2.html">Home 2</a>
+        <a href="lessons.html">Lessons</a>
+        <a href="instructors.html">Instructors</a>
+        <a href="booking.html">Booking</a>
+        <a href="blog.html" class="active">Blog</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="nav-actions">
+        <button class="icon-btn theme-toggle" aria-label="Toggle Theme"></button>
+        <button class="icon-btn rtl-toggle" aria-label="Toggle RTL"></button>
+        <a href="login.html" class="btn btn-primary">Login</a>
+        <button class="icon-btn hamburger" aria-label="Open Menu"><i class="ph ph-list"></i></button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="drawer-overlay"></div>
+  <div class="drawer">
+    <div class="drawer-header">
+      <a href="index.html" class="logo"><img src="assets/images/logo.svg" alt="LetsKite Logo"></a>
+      <button class="icon-btn drawer-close"><i class="ph ph-x"></i></button>
+    </div>
+    <div class="drawer-actions">
+      <button class="icon-btn theme-toggle"></button>
+      <button class="icon-btn rtl-toggle"></button>
+    </div>
+    <div class="drawer-links">
+      <a href="index.html">Home</a>
+      <a href="home2.html">Home 2</a>
+      <a href="lessons.html">Lessons</a>
+      <a href="instructors.html">Instructors</a>
+      <a href="booking.html">Booking</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+      <a href="login.html" class="btn btn-primary text-center" style="margin-top: 16px; color:#fff;">Login</a>
+    </div>
+  </div>
+
+  <main style="padding-top: 80px;">
+    <!-- Page Header -->
+    <section class="page-header" style="background-image: url('assets/images/hero-blog.png');">
+      <div class="container">
+        <h1>Latest News & Tips</h1>
+        <p class="subtext">Insights, gear reviews, and stories from the beach.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="grid" style="grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));">
+
+          <!-- Post 1 -->
+          <div class="card" style="align-items: flex-start; text-align: left; padding: 0; overflow: hidden;">
+            <a href="blog-single.html" style="width: 100%;"><img src="assets/images/blog-spots.jpg" alt="Kite spot"
+                style="margin: 0; border-radius: 0; aspect-ratio: 16/9;"></a>
+            <div style="padding: var(--space-3);">
+              <span
+                style="background: var(--primary); color: white; padding: 4px 8px; border-radius: 4px; font-size: 0.75rem; text-transform: uppercase; font-weight: bold; margin-bottom: 12px; display: inline-block;">Spots</span>
+              <a href="blog-single.html">
+                <h3 style="font-size: 1.5rem; margin-bottom: 8px; text-align: left;">Top 5 Beginner Spots for 2025</h3>
+              </a>
+              <p style="color: var(--text-muted); margin-bottom: 16px;">Looking for shallow water and steady winds? Here
+                are our top picks for learning this year.</p>
+              <div
+                style="display: flex; justify-content: space-between; align-items: center; width: 100%; color: var(--text-muted); font-size: 0.875rem;">
+                <span>By Alex Mercer</span>
+                <span>May 12, 2025 • 5 min read</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Post 2 -->
+          <div class="card" style="align-items: flex-start; text-align: left; padding: 0; overflow: hidden;">
+            <a href="blog-single.html" style="width: 100%;"><img src="assets/images/blog-gear.jpg" alt="Wing Foil Gear"
+                style="margin: 0; border-radius: 0; aspect-ratio: 16/9;"></a>
+            <div style="padding: var(--space-3);">
+              <span
+                style="background:var(--primary) ; color: white; padding: 4px 8px; border-radius: 4px; font-size: 0.75rem; text-transform: uppercase; font-weight: bold; margin-bottom: 12px; display: inline-block;">Gear</span>
+              <a href="blog-single.html">
+                <h3 style="font-size: 1.5rem; margin-bottom: 8px; text-align: left;">Wing Foil Gear Guide for Starters
+                </h3>
+              </a>
+              <p style="color: var(--text-muted); margin-bottom: 16px;">Everything you need to know about choosing your
+                first board, foil, and wing sizes.</p>
+              <div
+                style="display: flex; justify-content: space-between; align-items: center; width: 100%; color: var(--text-muted); font-size: 0.875rem;">
+                <span>By Sarah Jenkins</span>
+                <span>May 05, 2025 • 8 min read</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Post 3 -->
+          <div class="card" style="align-items: flex-start; text-align: left; padding: 0; overflow: hidden;">
+            <a href="blog-single.html" style="width: 100%;"><img src="assets/images/blog-safety.jpg" alt="Safety"
+                style="margin: 0; border-radius: 0; aspect-ratio: 16/9;"></a>
+            <div style="padding: var(--space-3);">
+              <span
+                style="background:var(--primary) ; color: white; padding: 4px 8px; border-radius: 4px; font-size: 0.75rem; text-transform: uppercase; font-weight: bold; margin-bottom: 12px; display: inline-block;">Safety</span>
+              <a href="blog-single.html">
+                <h3 style="font-size: 1.5rem; margin-bottom: 8px; text-align: left;">Self-Rescue Techniques You Must
+                  Know</h3>
+              </a>
+              <p style="color: var(--text-muted); margin-bottom: 16px;">A deep dive into deep water pack-downs and
+                getting back to shore safely.</p>
+              <div
+                style="display: flex; justify-content: space-between; align-items: center; width: 100%; color: var(--text-muted); font-size: 0.875rem;">
+                <span>By Diego Costa</span>
+                <span>Apr 28, 2025 • 6 min read</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Post 4 -->
+          <div class="card" style="align-items: flex-start; text-align: left; padding: 0; overflow: hidden;">
+            <a href="blog-single.html" style="width: 100%;"><img src="assets/images/blog-fitness.jpg" alt="Kite Fitness"
+                style="margin: 0; border-radius: 0; aspect-ratio: 16/9;"></a>
+            <div style="padding: var(--space-3);">
+              <span
+                style="background:var(--primary) ; color: white; padding: 4px 8px; border-radius: 4px; font-size: 0.75rem; text-transform: uppercase; font-weight: bold; margin-bottom: 12px; display: inline-block;">Training</span>
+              <a href="blog-single.html">
+                <h3 style="font-size: 1.5rem; margin-bottom: 8px; text-align: left;">How to Get Fit for Kiteboarding
+                  Season</h3>
+              </a>
+              <p style="color: var(--text-muted); margin-bottom: 16px;">The best off-season exercises to build core
+                strength, balance, and endurance before you hit the water.</p>
+              <div
+                style="display: flex; justify-content: space-between; align-items: center; width: 100%; color: var(--text-muted); font-size: 0.875rem;">
+                <span>By Alex Mercer</span>
+                <span>Apr 20, 2025 • 7 min read</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Post 5 -->
+          <div class="card" style="align-items: flex-start; text-align: left; padding: 0; overflow: hidden;">
+            <a href="blog-single.html" style="width: 100%;"><img src="assets/images/blog-wind.jpg" alt="Reading Wind"
+                style="margin: 0; border-radius: 0; aspect-ratio: 16/9;"></a>
+            <div style="padding: var(--space-3);">
+              <span
+                style="background:var(--primary) ; color: white; padding: 4px 8px; border-radius: 4px; font-size: 0.75rem; text-transform: uppercase; font-weight: bold; margin-bottom: 12px; display: inline-block;">Tips</span>
+              <a href="blog-single.html">
+                <h3 style="font-size: 1.5rem; margin-bottom: 8px; text-align: left;">How to Read Wind Forecasts Like a
+                  Pro</h3>
+              </a>
+              <p style="color: var(--text-muted); margin-bottom: 16px;">Windy, XCWeather, or Windguru? We break down
+                which apps to use and what the numbers actually mean.</p>
+              <div
+                style="display: flex; justify-content: space-between; align-items: center; width: 100%; color: var(--text-muted); font-size: 0.875rem;">
+                <span>By Sarah Jenkins</span>
+                <span>Apr 14, 2025 • 6 min read</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Post 6 -->
+          <div class="card" style="align-items: flex-start; text-align: left; padding: 0; overflow: hidden;">
+            <a href="blog-single.html" style="width: 100%;"><img src="assets/images/blog-travel.jpg" alt="Kite Travel"
+                style="margin: 0; border-radius: 0; aspect-ratio: 16/9;"></a>
+            <div style="padding: var(--space-3);">
+              <span
+                style="background:var(--primary) ; color: white; padding: 4px 8px; border-radius: 4px; font-size: 0.75rem; text-transform: uppercase; font-weight: bold; margin-bottom: 12px; display: inline-block;">Travel</span>
+              <a href="blog-single.html">
+                <h3 style="font-size: 1.5rem; margin-bottom: 8px; text-align: left;">Best Kite Travel Destinations in
+                  Europe</h3>
+              </a>
+              <p style="color: var(--text-muted); margin-bottom: 16px;">From Tarifa to Lefkada — our favourite spots to
+                pack your kite and explore the wind across the continent.</p>
+              <div
+                style="display: flex; justify-content: space-between; align-items: center; width: 100%; color: var(--text-muted); font-size: 0.875rem;">
+                <span>By Diego Costa</span>
+                <span>Apr 05, 2025 • 9 min read</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="index.html" class="logo mb-4"><img src="assets/images/logo.svg" alt="LetsKite Logo"></a>
+          <p style="color: var(--text-muted);">Premier kiteboarding and wing foil school. Experience the thrill of wind
+            and water safely.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="instructors.html">Instructors</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Lessons</h4>
+          <ul>
+            <li><a href="lessons.html">Beginner Kite</a></li>
+            <li><a href="lessons.html">Advanced Coaching</a></li>
+            <li><a href="lessons.html">Wing Foiling</a></li>
+            <li><a href="lessons.html">Equipment Rental</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact & Social</h4>
+          <ul style="margin-bottom: var(--space-3);">
+            <li><i class="ph ph-map-pin"></i> 123 Beachfront Rd</li>
+            <li><i class="ph ph-phone"></i> +1 234 567 8900</li>
+            <li><i class="ph ph-envelope"></i> hello@letskite.com</li>
+          </ul>
+          <div class="social-icons">
+            <a href="#" aria-label="Instagram"><i class="ph ph-instagram-logo"></i></a>
+            <a href="#" aria-label="Facebook"><i class="ph ph-facebook-logo"></i></a>
+            <a href="#" aria-label="YouTube"><i class="ph ph-youtube-logo"></i></a>
+            <a href="#" aria-label="TikTok"><i class="ph ph-tiktok-logo"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 LetsKite. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | LetsKite</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+
+  <main class="auth-page">
+    <div class="auth-card">
+      <div class="auth-toggles">
+        <button class="icon-btn theme-toggle" aria-label="Toggle Theme"></button>
+        <button class="icon-btn rtl-toggle" aria-label="Toggle RTL"></button>
+      </div>
+      
+      <a href="index.html" class="auth-logo"><img src="assets/images/logo.svg" alt="LetsKite Logo"></a>
+      <h1 style="font-size: 2rem; margin-bottom: var(--space-1);">Welcome Back</h1>
+      <p style="color: var(--text-muted); margin-bottom: var(--space-4);">Login to manage your bookings</p>
+
+      <form class="needs-validation" novalidate>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" class="form-control" required>
+          <div class="error-msg"></div>
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" class="form-control" required minlength="8">
+          <div class="error-msg"></div>
+        </div>
+        <button type="submit" class="btn btn-primary btn-full mt-2">Login</button>
+      </form>
+
+      <div style="margin: var(--space-4) 0; position: relative; text-align: center;">
+        <hr style="border: none; border-top: 1px solid var(--card-border);">
+        <span style="position: absolute; top: -12px; left: 50%; transform: translateX(-50%); background: var(--card-bg); padding: 0 8px; color: var(--text-muted); font-size: 0.875rem;">OR</span>
+      </div>
+
+      <div class="social-login">
+        <button class="btn btn-full" style="background: white; color: #757575; border: 1px solid #ddd; box-shadow: 0 1px 2px rgba(0,0,0,0.05); font-family: var(--font-body); font-weight: 500;">
+          <img src="https://www.svgrepo.com/show/475656/google-color.svg" alt="Google" style="width: 20px; height: 20px; margin-right: 8px; display: inline-block;">
+          Continue with Google
+        </button>
+        <button class="btn btn-full" style="background: var(--bg-color); color: var(--text-color); border: 1px solid var(--card-border); font-family: var(--font-body); font-weight: 500;">
+          <i class="ph ph-envelope-simple" style="font-size: 1.25rem; margin-right: 8px;"></i>
+          Continue with Email
+        </button>
+      </div>
+
+      <p style="margin-top: var(--space-4); color: var(--text-muted);">
+        Don't have an account? <a href="register.html" style="color: var(--primary); font-weight: bold;">Register</a>
+      </p>
+    </div>
+  </main>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

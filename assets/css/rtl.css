@@ -1,0 +1,38 @@
+/* f:\MAY_WEBSITES\letskite\assets\css\rtl.css */
+html[dir="rtl"] {
+  direction: rtl;
+  text-align: right;
+}
+
+html[dir="rtl"] .drawer {
+  right: auto;
+  left: -100%;
+}
+
+html[dir="rtl"] .drawer.open {
+  left: 0;
+  right: auto;
+}
+
+html[dir="rtl"] .form-group {
+  text-align: right;
+}
+
+html[dir="rtl"] .footer-col h4 {
+  text-align: right;
+}
+
+@media (max-width: 768px) {
+  html[dir="rtl"] .footer-col h4 {
+    text-align: center;
+  }
+}
+
+html[dir="rtl"] .typewriter-text {
+  border-right: none;
+  border-left: 4px solid var(--primary);
+}
+
+html[dir="rtl"] .nav-links a {
+  margin-left: 0;
+}
