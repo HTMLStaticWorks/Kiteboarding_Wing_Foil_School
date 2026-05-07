@@ -818,3 +818,11 @@ section .subtext {
     grid-template-columns: 1fr;
   }
 }
+
+/* Blog Single Page Mobile Padding */
+@media (max-width: 768px) {
+  .blog-single-article {
+    padding-left: var(--space-4) !important;
+    padding-right: var(--space-4) !important;
+  }
+}
