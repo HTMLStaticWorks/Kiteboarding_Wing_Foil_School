@@ -174,24 +174,26 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // Back to Top
-  const backToTop = document.createElement('button');
-  backToTop.className = 'back-to-top';
-  backToTop.innerHTML = '<i class="ph ph-caret-up"></i>';
-  backToTop.setAttribute('aria-label', 'Back to Top');
-  document.body.appendChild(backToTop);
+  if (!document.querySelector('.auth-page')) {
+    const backToTop = document.createElement('button');
+    backToTop.className = 'back-to-top';
+    backToTop.innerHTML = '<i class="ph ph-caret-up"></i>';
+    backToTop.setAttribute('aria-label', 'Back to Top');
+    document.body.appendChild(backToTop);
 
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > 300) {
-      backToTop.classList.add('show');
-    } else {
-      backToTop.classList.remove('show');
-    }
-  });
-
-  backToTop.addEventListener('click', () => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 300) {
+        backToTop.classList.add('show');
+      } else {
+        backToTop.classList.remove('show');
+      }
     });
-  });
+
+    backToTop.addEventListener('click', () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+  }
 });
