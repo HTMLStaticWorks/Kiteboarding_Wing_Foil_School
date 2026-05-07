@@ -728,6 +728,20 @@ section .subtext {
   }
 }
 
+@media (min-width: 1024px) {
+  .banner-iko {
+    padding: 180px 0 !important;
+    background-position: center top !important;
+  }
+}
+
+@media (min-width: 1440px) {
+  .banner-iko {
+    padding: 320px 0 !important;
+    background-position: center top !important;
+  }
+}
+
 @media (max-width: 768px) {
   .footer-grid {
     grid-template-columns: 1fr 1fr;
@@ -744,6 +758,36 @@ section .subtext {
   }
 }
 
+.pathway-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-4);
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .pathway-flex {
+    flex-direction: column;
+  }
+  .pathway-arrow {
+    transform: rotate(90deg);
+  }
+}
+
+@media (max-width: 360px) {
+  .pathway-flex {
+    width: 100%;
+    align-items: stretch;
+  }
+}
+
+@media (min-width: 769px) {
+  [dir="rtl"] .pathway-arrow {
+    transform: rotate(180deg);
+  }
+}
+
 @media (max-width: 360px) {
   .drawer {
     width: 100%;
@@ -757,10 +801,15 @@ section .subtext {
   .auth-card {
     padding: var(--space-6) var(--space-2);
   }
+  .auth-page {
+    align-items: flex-start;
+    padding-top: 60px;
+  }
   .auth-toggles {
-    position: absolute;
+    position: fixed;
     top: var(--space-2);
     right: var(--space-2);
+    z-index: 1000;
   }
   #bookingForm .grid {
     grid-template-columns: 1fr !important;
