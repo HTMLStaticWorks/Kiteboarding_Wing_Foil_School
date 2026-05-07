@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <title>Kiteboarding Favicon</title>
+
+  <!-- Top triangle -->
+  <polygon points="16,5 25,15 16,15" fill="#0055ff"/>
+  <!-- Bottom triangle -->
+  <polygon points="16,15 25,15 16,22" fill="#0055ff"/>
+  <!-- Left triangle -->
+  <polygon points="16,5 16,22 7,15" fill="#0055ff"/>
+  <!-- Right triangle (kept separate to allow seam line if desired) -->
+
+  <!-- Full diamond as single path for crispness -->
+  <polygon points="16,5 25,15 16,22 7,15" fill="#0055ff"/>
+
+  <!-- Subtle cross seam lines for quadrant definition -->
+  <line x1="16" y1="5" x2="16" y2="22" stroke="white" stroke-width="0.8" stroke-opacity="0.3"/>
+  <line x1="7" y1="15" x2="25" y2="15" stroke="white" stroke-width="0.8" stroke-opacity="0.3"/>
+
+  <!-- Control lines / bridles -->
+  <line x1="13.5" y1="22" x2="11" y2="27" stroke="#0055ff" stroke-width="1.4" stroke-linecap="round"/>
+  <line x1="18.5" y1="22" x2="21" y2="27" stroke="#0055ff" stroke-width="1.4" stroke-linecap="round"/>
+</svg>

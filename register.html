@@ -1,22 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Register | LetsKite</title>
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/rtl.css">
   <script src="https://unpkg.com/@phosphor-icons/web"></script>
 </head>
+
 <body>
 
   <main class="auth-page">
+    <div class="auth-toggles">
+      <button class="icon-btn theme-toggle" aria-label="Toggle Theme"></button>
+      <button class="icon-btn rtl-toggle" aria-label="Toggle RTL"></button>
+    </div>
+
     <div class="auth-card">
-      <div class="auth-toggles">
-        <button class="icon-btn theme-toggle" aria-label="Toggle Theme"></button>
-        <button class="icon-btn rtl-toggle" aria-label="Toggle RTL"></button>
-      </div>
-      
       <a href="index.html" class="auth-logo"><img src="assets/images/logo.svg" alt="LetsKite Logo"></a>
       <h1 style="font-size: 2rem; margin-bottom: var(--space-1);">Create Account</h1>
       <p style="color: var(--text-muted); margin-bottom: var(--space-4);">Join LetsKite and hit the water</p>
@@ -34,19 +37,26 @@
         </div>
         <div class="form-group">
           <label for="password">Password</label>
-          <input type="password" id="password" class="form-control" required minlength="8">
+          <div class="password-wrapper">
+            <input type="password" id="password" class="form-control" required minlength="8">
+            <button type="button" class="password-toggle" aria-label="Toggle Password Visibility"></button>
+          </div>
           <div class="error-msg"></div>
         </div>
         <div class="form-group">
           <label for="confirmPassword">Confirm Password</label>
-          <input type="password" id="confirmPassword" class="form-control" required minlength="8">
+          <div class="password-wrapper">
+            <input type="password" id="confirmPassword" class="form-control" required minlength="8">
+            <button type="button" class="password-toggle" aria-label="Toggle Password Visibility"></button>
+          </div>
           <div class="error-msg"></div>
         </div>
-        
+
         <div class="checkbox-group" style="text-align: left; align-items: flex-start;">
           <input type="checkbox" id="terms" required style="margin-top: 4px;">
           <label for="terms" style="font-size: 0.875rem; color: var(--text-muted); font-weight: normal; margin: 0;">
-            I accept the <a href="#" style="color: var(--primary);">Terms & Conditions</a>
+            I accept the <a href="#" style="color: var(--primary);">Terms & Conditions </a> and <a href="#"
+              style="color: var(--primary);">Privacy Policy</a>
           </label>
         </div>
 
@@ -55,17 +65,21 @@
 
       <div style="margin: var(--space-4) 0; position: relative; text-align: center;">
         <hr style="border: none; border-top: 1px solid var(--card-border);">
-        <span style="position: absolute; top: -12px; left: 50%; transform: translateX(-50%); background: var(--card-bg); padding: 0 8px; color: var(--text-muted); font-size: 0.875rem;">OR</span>
+        <span
+          style="position: absolute; top: -12px; left: 50%; transform: translateX(-50%); background: var(--card-bg); padding: 0 8px; color: var(--text-muted); font-size: 0.875rem;">OR</span>
       </div>
 
       <div class="social-login">
-        <button class="btn btn-full" style="background: white; color: #757575; border: 1px solid #ddd; box-shadow: 0 1px 2px rgba(0,0,0,0.05); font-family: var(--font-body); font-weight: 500;">
-          <img src="https://www.svgrepo.com/show/475656/google-color.svg" alt="Google" style="width: 20px; height: 20px; margin-right: 8px; display: inline-block;">
+        <button class="btn btn-full"
+          style="background: white; color: #757575; border: 1px solid #ddd; box-shadow: 0 1px 2px rgba(0,0,0,0.05); font-family: var(--font-body); font-weight: 500;">
+          <img src="https://www.svgrepo.com/show/475656/google-color.svg" alt="Google"
+            style="width: 20px; height: 20px; margin-right: 8px; display: inline-block;">
           Continue with Google
         </button>
-        <button class="btn btn-full" style="background: var(--bg-color); color: var(--text-color); border: 1px solid var(--card-border); font-family: var(--font-body); font-weight: 500;">
-          <i class="ph ph-envelope-simple" style="font-size: 1.25rem; margin-right: 8px;"></i>
-          Continue with Email
+        <button class="btn btn-full"
+          style="background: var(--text-color); color: var(--bg-color); border: 1px solid var(--card-border); font-family: var(--font-body); font-weight: 500;">
+          <i class="ph ph-apple-logo" style="font-size: 1.25rem; margin-right: 8px;"></i>
+          Continue with Apple
         </button>
       </div>
 
@@ -77,4 +91,5 @@
 
   <script src="assets/js/main.js"></script>
 </body>
+
 </html>

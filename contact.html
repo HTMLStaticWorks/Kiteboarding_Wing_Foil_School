@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact Us | LetsKite</title>
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/rtl.css">
   <script src="https://unpkg.com/@phosphor-icons/web"></script>
 </head>
+
 <body>
 
   <!-- Navbar -->
@@ -49,7 +52,7 @@
       <a href="instructors.html">Instructors</a>
       <a href="booking.html">Booking</a>
       <a href="blog.html">Blog</a>
-      <a href="contact.html">Contact</a>
+      <a href="contact.html" class="active">Contact</a>
       <a href="login.html" class="btn btn-primary text-center" style="margin-top: 16px; color:#fff;">Login</a>
     </div>
   </div>
@@ -66,10 +69,11 @@
     <section>
       <div class="container">
         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-8);" class="contact-grid">
-          
+
           <!-- Contact Form -->
-          <div style="background: var(--card-bg); padding: var(--space-6); border-radius: var(--radius); box-shadow: var(--shadow); border: 1px solid var(--card-border);">
-            <h2 style="text-align: left; margin-bottom: var(--space-4);">Send a Message</h2>
+          <div
+            style="background: var(--card-bg); padding: var(--space-6); border-radius: var(--radius); box-shadow: var(--shadow); border: 1px solid var(--card-border);">
+            <h2 style="text-align: center; margin-bottom: var(--space-4);">Send a Message</h2>
             <form class="needs-validation" action="https://formspree.io/f/placeholder" method="POST" novalidate>
               <div class="form-group">
                 <label for="name">Name *</label>
@@ -90,55 +94,60 @@
                 <textarea id="message" class="form-control" rows="5" required></textarea>
                 <div class="error-msg"></div>
               </div>
-              <button type="submit" class="btn btn-primary btn-full" style="margin-top: var(--space-2);">Send Message</button>
+              <button type="submit" class="btn btn-primary btn-full" style="margin-top: var(--space-2);">Send
+                Message</button>
             </form>
           </div>
 
-          <!-- Contact Info -->
           <div>
-            <h2 style="text-align: left; margin-bottom: var(--space-4);">Visit The School</h2>
+            <h2 style="text-align: center; margin-bottom: var(--space-4);">Visit The School</h2>
             <div style="display: flex; flex-direction: column; gap: var(--space-4); margin-bottom: var(--space-6);">
               <div style="display: flex; gap: var(--space-2); align-items: flex-start;">
-                <i class="ph ph-map-pin" style="font-size: 2rem; color: var(--primary);"></i>
+                <i class="ph ph-map-pin" style="font-size: 2rem; color: var(--primary); flex-shrink: 0;"></i>
                 <div>
-                  <h3 style="font-size: 1.25rem; margin-bottom: 4px;">Location</h3>
+                  <h3 style="font-size: 1.25rem; margin-bottom: 4px; text-align: left;">Location</h3>
                   <p style="color: var(--text-muted);">123 Beachfront Rd, Coastal City, CC 90210</p>
                 </div>
               </div>
               <div style="display: flex; gap: var(--space-2); align-items: flex-start;">
-                <i class="ph ph-phone" style="font-size: 2rem; color: var(--primary);"></i>
+                <i class="ph ph-phone" style="font-size: 2rem; color: var(--primary); flex-shrink: 0;"></i>
                 <div>
-                  <h3 style="font-size: 1.25rem; margin-bottom: 4px;">Phone & WhatsApp</h3>
+                  <h3 style="font-size: 1.25rem; margin-bottom: 4px; text-align: left;">Phone & WhatsApp</h3>
                   <p style="color: var(--text-muted);">+1 234 567 8900</p>
                 </div>
               </div>
               <div style="display: flex; gap: var(--space-2); align-items: flex-start;">
-                <i class="ph ph-envelope" style="font-size: 2rem; color: var(--primary);"></i>
+                <i class="ph ph-envelope" style="font-size: 2rem; color: var(--primary); flex-shrink: 0;"></i>
                 <div>
-                  <h3 style="font-size: 1.25rem; margin-bottom: 4px;">Email</h3>
+                  <h3 style="font-size: 1.25rem; margin-bottom: 4px; text-align: left;">Email</h3>
                   <p style="color: var(--text-muted);">hello@letskite.com</p>
                 </div>
               </div>
               <div style="display: flex; gap: var(--space-2); align-items: flex-start;">
-                <i class="ph ph-clock" style="font-size: 2rem; color: var(--primary);"></i>
+                <i class="ph ph-clock" style="font-size: 2rem; color: var(--primary); flex-shrink: 0;"></i>
                 <div>
-                  <h3 style="font-size: 1.25rem; margin-bottom: 4px;">Season Hours</h3>
+                  <h3 style="font-size: 1.25rem; margin-bottom: 4px; text-align: left;">Season Hours</h3>
                   <p style="color: var(--text-muted);">Mon - Sun: 9:00 AM - 6:00 PM<br>(Weather Permitting)</p>
                 </div>
               </div>
             </div>
+            <!-- Social Media Icons -->
+            <div style="text-align: center; margin-bottom: var(--space-6);">
+              <h3 style="font-size: 1.25rem; margin-bottom: var(--space-3);">Follow Our Adventures</h3>
+              <div class="social-icons" style="justify-content: center;">
+                <a href="#" aria-label="Instagram"><i class="ph ph-instagram-logo"></i></a>
+                <a href="#" aria-label="Facebook"><i class="ph ph-facebook-logo"></i></a>
+                <a href="#" aria-label="YouTube"><i class="ph ph-youtube-logo"></i></a>
+                <a href="#" aria-label="TikTok"><i class="ph ph-tiktok-logo"></i></a>
+              </div>
+            </div>
 
             <!-- Google Maps iframe -->
-            <div style="width: 100%; height: 350px; background: var(--card-border); border-radius: var(--radius); overflow: hidden; border: 1px solid var(--card-border);">
-              <iframe 
-                width="100%" 
-                height="100%" 
-                frameborder="0" 
-                style="border:0" 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14441.972322303577!2d55.18844876615591!3d25.1865809833633!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f69f88421c971%3A0xd6488f7259f9a2e6!2sKite%20Beach!5e0!3m2!1sen!2sae!4v1715050000000!5m2!1sen!2sae" 
-                allowfullscreen="" 
-                loading="lazy" 
-                referrerpolicy="no-referrer-when-downgrade">
+            <div
+              style="width: 100%; height: 350px; background: var(--card-border); border-radius: var(--radius); overflow: hidden; border: 1px solid var(--card-border);">
+              <iframe width="100%" height="100%" frameborder="0" style="border:0"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14441.972322303577!2d55.18844876615591!3d25.1865809833633!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f69f88421c971%3A0xd6488f7259f9a2e6!2sKite%20Beach!5e0!3m2!1sen!2sae!4v1715050000000!5m2!1sen!2sae"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
               </iframe>
             </div>
           </div>
@@ -147,8 +156,22 @@
       </div>
     </section>
     <style>
-      @media(max-width: 768px) { .contact-grid { grid-template-columns: 1fr !important; } }
-      @media(max-width: 360px) { .contact-grid { width: 100%; overflow: hidden; } section { padding: var(--space-4) 12px; } }
+      @media(max-width: 768px) {
+        .contact-grid {
+          grid-template-columns: 1fr !important;
+        }
+      }
+
+      @media(max-width: 360px) {
+        .contact-grid {
+          width: 100%;
+          overflow: hidden;
+        }
+
+        section {
+          padding: var(--space-4) 12px;
+        }
+      }
     </style>
   </main>
 
@@ -157,7 +180,8 @@
       <div class="footer-grid">
         <div class="footer-col">
           <a href="index.html" class="logo mb-4"><img src="assets/images/logo.svg" alt="LetsKite Logo"></a>
-          <p style="color: var(--text-muted);">Premier kiteboarding and wing foil school. Experience the thrill of wind and water safely.</p>
+          <p style="color: var(--text-muted);">Premier kiteboarding and wing foil school. Experience the thrill of wind
+            and water safely.</p>
         </div>
         <div class="footer-col">
           <h4>Quick Links</h4>
@@ -193,11 +217,12 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <p>© 2025 LetsKite. All rights reserved.</p>
+        <p>© 2026 LetsKite. All rights reserved.</p>
       </div>
     </div>
   </footer>
 
   <script src="assets/js/main.js"></script>
 </body>
+
 </html>

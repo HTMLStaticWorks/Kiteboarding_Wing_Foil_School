@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home 2 | LetsKite</title>
   <meta name="description" content="Discover alternative homepage for LetsKite.">
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/rtl.css">
   <script src="https://unpkg.com/@phosphor-icons/web"></script>
@@ -51,7 +52,7 @@
     </div>
     <div class="drawer-links">
       <a href="index.html">Home</a>
-      <a href="home2.html">Home 2</a>
+      <a href="home2.html" class="active">Home 2</a>
       <a href="lessons.html">Lessons</a>
       <a href="instructors.html">Instructors</a>
       <a href="booking.html">Booking</a>
@@ -175,7 +176,7 @@
             <p class="testimonial-text">"Incredible experience! The instructors are super patient and the radio helmets
               make a huge difference. I was up and riding by day 3!"</p>
             <div class="testimonial-author" style="justify-content: center;">
-              <img src="assets/images/avatar-sarah.jpg" alt="Sarah K.">
+              <img src="assets/images/avatar-sarah.png" alt="Sarah K.">
               <div style="text-align: left;">
                 <strong>Sarah K. 🇬🇧</strong>
                 <span>Beginner Course</span>
@@ -192,7 +193,7 @@
             <p class="testimonial-text">"Tried wing foiling for the first time here. The gear was brand new and the
               lagoon spot was absolutely perfect. Highly recommend!"</p>
             <div class="testimonial-author" style="justify-content: center;">
-              <img src="assets/images/avatar-markus.jpg" alt="Markus W.">
+              <img src="assets/images/avatar-markus.png" alt="Markus W.">
               <div style="text-align: left;">
                 <strong>Markus W. 🇩🇪</strong>
                 <span>Wing Foil Discovery</span>
@@ -209,7 +210,7 @@
             <p class="testimonial-text">"The advanced coaching sessions took my riding to the next level. Video analysis
               is a game changer for fixing your technique fast."</p>
             <div class="testimonial-author" style="justify-content: center;">
-              <img src="assets/images/avatar-carlos.jpg" alt="Carlos M.">
+              <img src="assets/images/avatar-carlos.png" alt="Carlos M.">
               <div style="text-align: left;">
                 <strong>Carlos M. 🇪🇸</strong>
                 <span>Advanced Coaching</span>
@@ -277,7 +278,7 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <p>© 2025 LetsKite. All rights reserved.</p>
+        <p>© 2026 LetsKite. All rights reserved.</p>
       </div>
     </div>
   </footer>
@@ -304,7 +305,7 @@
 
     .hero-split-content h1 {
       font-size: 3rem;
-      text-align: left;
+      text-align: center;
       margin-bottom: var(--space-3);
       line-height: 1.1;
     }
@@ -313,11 +314,12 @@
       font-size: 1.1rem;
       margin-bottom: var(--space-4);
       color: var(--text-muted);
-      text-align: left;
+      text-align: center;
     }
 
     .hero-btns {
       display: flex;
+      justify-content: center;
       gap: var(--space-2);
       flex-wrap: wrap;
     }
@@ -352,6 +354,12 @@
 
       .hero-split-image {
         min-height: auto;
+        padding: var(--space-4);
+      }
+
+      .hero-split-image img {
+        position: relative;
+        border-radius: 24px;
       }
     }
 

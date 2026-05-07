@@ -159,4 +159,39 @@ document.addEventListener('DOMContentLoaded', () => {
       errorMsg.style.display = 'none';
     }
   }
+
+  // Password Visibility Toggle
+  const toggleButtons = document.querySelectorAll('.password-toggle');
+  toggleButtons.forEach(btn => {
+    btn.innerHTML = '<i class="ph ph-eye"></i>';
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      const input = btn.previousElementSibling;
+      const type = input.getAttribute('type') === 'password' ? 'text' : 'password';
+      input.setAttribute('type', type);
+      btn.innerHTML = type === 'password' ? '<i class="ph ph-eye"></i>' : '<i class="ph ph-eye-slash"></i>';
+    });
+  });
+
+  // Back to Top
+  const backToTop = document.createElement('button');
+  backToTop.className = 'back-to-top';
+  backToTop.innerHTML = '<i class="ph ph-caret-up"></i>';
+  backToTop.setAttribute('aria-label', 'Back to Top');
+  document.body.appendChild(backToTop);
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+      backToTop.classList.add('show');
+    } else {
+      backToTop.classList.remove('show');
+    }
+  });
+
+  backToTop.addEventListener('click', () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
 });
