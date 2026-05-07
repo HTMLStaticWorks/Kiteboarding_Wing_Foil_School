@@ -9,6 +9,32 @@
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/rtl.css">
   <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <style>
+    /* Auth button hover effects */
+    .btn-primary {
+      transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+    }
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(var(--primary-rgb, 0, 120, 212), 0.4);
+      filter: brightness(1.1);
+    }
+    .btn-primary:active {
+      transform: translateY(0);
+      box-shadow: none;
+    }
+    .social-login .btn {
+      transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+    }
+    .social-login .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+    }
+    .social-login .btn:active {
+      transform: translateY(0);
+      box-shadow: none;
+    }
+  </style>
 </head>
 
 <body>

@@ -118,7 +118,163 @@
         </div>
       </div>
     </section>
+    <!-- ============================================================
+     HOW IT WORKS — paste this into index.html
+     Best placement: after the "Why LetsKite" section,
+     before the "Lesson Packages" section
+     ============================================================ -->
 
+    <section class="how-it-works-section">
+      <div class="container">
+        <h2>How It Works</h2>
+        <p class="subtext">From first click to first ride — here's what to expect.</p>
+
+        <div class="hiw-steps">
+
+          <!-- Step 1 -->
+          <div class="hiw-step">
+            <div class="hiw-number">01</div>
+            <h3 class="hiw-title">Book Your Session</h3>
+            <p class="hiw-body">Pick your lesson type, choose a date that suits you, and secure your spot online in
+              under 2 minutes.</p>
+            <a href="booking.html" class="hiw-link">Book now <i class="ph ph-arrow-right"></i></a>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="hiw-step">
+            <div class="hiw-number">02</div>
+            <h3 class="hiw-title">Learn with the Pros</h3>
+            <p class="hiw-body">Your IKO-certified instructor guides you step by step — from beach theory to kite
+              control to your first water starts.</p>
+            <a href="instructors.html" class="hiw-link">Meet the team <i class="ph ph-arrow-right"></i></a>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="hiw-step hiw-step--accent">
+            <div class="hiw-number">03</div>
+            <h3 class="hiw-title">Ride the Wind</h3>
+            <p class="hiw-body">Feel the rush as you carve through the water independently. Advanced coaching keeps you
+              progressing further.</p>
+            <a href="lessons.html" class="hiw-link">See all lessons <i class="ph ph-arrow-right"></i></a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <style>
+      .how-it-works-section {
+        background-color: var(--bg-color);
+      }
+
+      .hiw-steps {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: var(--space-4);
+        margin-top: var(--space-4);
+      }
+
+      .hiw-step {
+        position: relative;
+        background: var(--card-bg);
+        border: 1px solid var(--card-border);
+        border-top: 4px solid var(--primary);
+        border-radius: var(--radius);
+        padding: var(--space-4) var(--space-3);
+        box-shadow: var(--shadow);
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+      }
+
+      .hiw-step--accent {
+        border-top-color: var(--accent);
+      }
+
+      .hiw-step--accent .hiw-number {
+        color: var(--accent);
+      }
+
+      .hiw-step--accent .hiw-link {
+        color: var(--accent);
+      }
+
+      .hiw-number {
+        font-family: var(--font-heading);
+        font-size: 5rem;
+        line-height: 1;
+        color: var(--primary);
+        opacity: 0.12;
+        position: absolute;
+        bottom: var(--space-2);
+        right: var(--space-3);
+        user-select: none;
+        pointer-events: none;
+      }
+
+      .hiw-title {
+        font-size: 1.5rem;
+        margin-bottom: var(--space-2);
+        text-align: left;
+      }
+
+      .hiw-body {
+        color: var(--text-muted);
+        font-size: 0.95rem;
+        line-height: 1.7;
+        margin-bottom: var(--space-3);
+        flex-grow: 1;
+        text-align: left;
+      }
+
+      .hiw-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        color: var(--primary);
+        font-weight: 600;
+        font-size: 0.95rem;
+        transition: gap var(--transition), color var(--transition);
+        text-decoration: none;
+      }
+
+      .hiw-link:hover {
+        gap: 10px;
+      }
+
+      @media (min-width: 600px) and (max-width: 1023px) {
+        .hiw-steps {
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        .hiw-steps .hiw-step:last-child {
+          grid-column: 1 / -1;
+          max-width: calc(50% - var(--space-2));
+          margin: 0 auto;
+          width: 100%;
+        }
+      }
+
+      @media (max-width: 599px) {
+        .hiw-steps {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      html[dir="rtl"] .hiw-title,
+      html[dir="rtl"] .hiw-body {
+        text-align: right;
+      }
+
+      html[dir="rtl"] .hiw-number {
+        right: auto;
+        left: var(--space-3);
+      }
+
+      html[dir="rtl"] .hiw-link {
+        flex-direction: row-reverse;
+      }
+    </style>
 
     <!-- Lesson Packages -->
     <section style="background-color: var(--secondary);">

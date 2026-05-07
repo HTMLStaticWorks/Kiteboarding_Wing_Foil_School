@@ -9,6 +9,23 @@
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/rtl.css">
   <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <style>
+    .blog-grid {
+      grid-template-columns: 1fr;
+    }
+
+    @media (min-width: 640px) {
+      .blog-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .blog-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -68,13 +85,13 @@
 
     <section>
       <div class="container">
-        <div class="grid" style="grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));">
+        <div class="grid blog-grid">
 
           <!-- Post 1 -->
           <div class="card" style="align-items: flex-start; text-align: left; padding: 0; overflow: hidden;">
             <a href="blog-single.html" style="width: 100%;"><img src="assets/images/blog-spots.jpg" alt="Kite spot"
                 style="margin: 0; border-radius: 0; aspect-ratio: 16/9;"></a>
-            <div style="padding: var(--space-3);">
+            <div style="padding: var(--space-3); display: flex; flex-direction: column; flex: 1;">
               <span
                 style="background: var(--primary); color: white; padding: 4px 8px; border-radius: 4px; font-size: 0.75rem; text-transform: uppercase; font-weight: bold; margin-bottom: 12px; display: inline-block;">Spots</span>
               <a href="blog-single.html">
@@ -82,10 +99,14 @@
               </a>
               <p style="color: var(--text-muted); margin-bottom: 16px;">Looking for shallow water and steady winds? Here
                 are our top picks for learning this year.</p>
-              <div
-                style="display: flex; justify-content: space-between; align-items: center; width: 100%; color: var(--text-muted); font-size: 0.875rem;">
-                <span>By Alex Mercer</span>
-                <span>May 12, 2026 • 5 min read</span>
+              <div style="margin-top: auto;">
+                <div
+                  style="display: flex; justify-content: space-between; align-items: center; width: 100%; color: var(--text-muted); font-size: 0.875rem; margin-bottom: 16px;">
+                  <span>By Alex Mercer</span>
+                  <span>May 12, 2026 • 5 min read</span>
+                </div>
+                <a href="blog-single.html" class="btn btn-primary"
+                  style="width: 100%; text-align: center; display: block;">Read More</a>
               </div>
             </div>
           </div>
@@ -94,7 +115,7 @@
           <div class="card" style="align-items: flex-start; text-align: left; padding: 0; overflow: hidden;">
             <a href="blog-single.html" style="width: 100%;"><img src="assets/images/blog-gear.jpg" alt="Wing Foil Gear"
                 style="margin: 0; border-radius: 0; aspect-ratio: 16/9;"></a>
-            <div style="padding: var(--space-3);">
+            <div style="padding: var(--space-3); display: flex; flex-direction: column; flex: 1;">
               <span
                 style="background:var(--primary) ; color: white; padding: 4px 8px; border-radius: 4px; font-size: 0.75rem; text-transform: uppercase; font-weight: bold; margin-bottom: 12px; display: inline-block;">Gear</span>
               <a href="blog-single.html">
@@ -103,10 +124,14 @@
               </a>
               <p style="color: var(--text-muted); margin-bottom: 16px;">Everything you need to know about choosing your
                 first board, foil, and wing sizes.</p>
-              <div
-                style="display: flex; justify-content: space-between; align-items: center; width: 100%; color: var(--text-muted); font-size: 0.875rem;">
-                <span>By Sarah Jenkins</span>
-                <span>May 05, 2026 • 8 min read</span>
+              <div style="margin-top: auto;">
+                <div
+                  style="display: flex; justify-content: space-between; align-items: center; width: 100%; color: var(--text-muted); font-size: 0.875rem; margin-bottom: 16px;">
+                  <span>By Sarah Jenkins</span>
+                  <span>May 05, 2026 • 8 min read</span>
+                </div>
+                <a href="blog-single.html" class="btn btn-primary"
+                  style="width: 100%; text-align: center; display: block;">Read More</a>
               </div>
             </div>
           </div>
@@ -115,7 +140,7 @@
           <div class="card" style="align-items: flex-start; text-align: left; padding: 0; overflow: hidden;">
             <a href="blog-single.html" style="width: 100%;"><img src="assets/images/blog-safety.jpg" alt="Safety"
                 style="margin: 0; border-radius: 0; aspect-ratio: 16/9;"></a>
-            <div style="padding: var(--space-3);">
+            <div style="padding: var(--space-3); display: flex; flex-direction: column; flex: 1;">
               <span
                 style="background:var(--primary) ; color: white; padding: 4px 8px; border-radius: 4px; font-size: 0.75rem; text-transform: uppercase; font-weight: bold; margin-bottom: 12px; display: inline-block;">Safety</span>
               <a href="blog-single.html">
@@ -124,10 +149,14 @@
               </a>
               <p style="color: var(--text-muted); margin-bottom: 16px;">A deep dive into deep water pack-downs and
                 getting back to shore safely.</p>
-              <div
-                style="display: flex; justify-content: space-between; align-items: center; width: 100%; color: var(--text-muted); font-size: 0.875rem;">
-                <span>By Diego Costa</span>
-                <span>Apr 28, 2026 • 6 min read</span>
+              <div style="margin-top: auto;">
+                <div
+                  style="display: flex; justify-content: space-between; align-items: center; width: 100%; color: var(--text-muted); font-size: 0.875rem; margin-bottom: 16px;">
+                  <span>By Diego Costa</span>
+                  <span>Apr 28, 2026 • 6 min read</span>
+                </div>
+                <a href="blog-single.html" class="btn btn-primary"
+                  style="width: 100%; text-align: center; display: block;">Read More</a>
               </div>
             </div>
           </div>
@@ -136,7 +165,7 @@
           <div class="card" style="align-items: flex-start; text-align: left; padding: 0; overflow: hidden;">
             <a href="blog-single.html" style="width: 100%;"><img src="assets/images/blog-fitness.jpg" alt="Kite Fitness"
                 style="margin: 0; border-radius: 0; aspect-ratio: 16/9;"></a>
-            <div style="padding: var(--space-3);">
+            <div style="padding: var(--space-3); display: flex; flex-direction: column; flex: 1;">
               <span
                 style="background:var(--primary) ; color: white; padding: 4px 8px; border-radius: 4px; font-size: 0.75rem; text-transform: uppercase; font-weight: bold; margin-bottom: 12px; display: inline-block;">Training</span>
               <a href="blog-single.html">
@@ -145,10 +174,14 @@
               </a>
               <p style="color: var(--text-muted); margin-bottom: 16px;">The best off-season exercises to build core
                 strength, balance, and endurance before you hit the water.</p>
-              <div
-                style="display: flex; justify-content: space-between; align-items: center; width: 100%; color: var(--text-muted); font-size: 0.875rem;">
-                <span>By Alex Mercer</span>
-                <span>Apr 20, 2026 • 7 min read</span>
+              <div style="margin-top: auto;">
+                <div
+                  style="display: flex; justify-content: space-between; align-items: center; width: 100%; color: var(--text-muted); font-size: 0.875rem; margin-bottom: 16px;">
+                  <span>By Alex Mercer</span>
+                  <span>Apr 20, 2026 • 7 min read</span>
+                </div>
+                <a href="blog-single.html" class="btn btn-primary"
+                  style="width: 100%; text-align: center; display: block;">Read More</a>
               </div>
             </div>
           </div>
@@ -157,7 +190,7 @@
           <div class="card" style="align-items: flex-start; text-align: left; padding: 0; overflow: hidden;">
             <a href="blog-single.html" style="width: 100%;"><img src="assets/images/blog-wind.jpg" alt="Reading Wind"
                 style="margin: 0; border-radius: 0; aspect-ratio: 16/9;"></a>
-            <div style="padding: var(--space-3);">
+            <div style="padding: var(--space-3); display: flex; flex-direction: column; flex: 1;">
               <span
                 style="background:var(--primary) ; color: white; padding: 4px 8px; border-radius: 4px; font-size: 0.75rem; text-transform: uppercase; font-weight: bold; margin-bottom: 12px; display: inline-block;">Tips</span>
               <a href="blog-single.html">
@@ -166,10 +199,14 @@
               </a>
               <p style="color: var(--text-muted); margin-bottom: 16px;">Windy, XCWeather, or Windguru? We break down
                 which apps to use and what the numbers actually mean.</p>
-              <div
-                style="display: flex; justify-content: space-between; align-items: center; width: 100%; color: var(--text-muted); font-size: 0.875rem;">
-                <span>By Sarah Jenkins</span>
-                <span>Apr 14, 2026 • 6 min read</span>
+              <div style="margin-top: auto;">
+                <div
+                  style="display: flex; justify-content: space-between; align-items: center; width: 100%; color: var(--text-muted); font-size: 0.875rem; margin-bottom: 16px;">
+                  <span>By Sarah Jenkins</span>
+                  <span>Apr 14, 2026 • 6 min read</span>
+                </div>
+                <a href="blog-single.html" class="btn btn-primary"
+                  style="width: 100%; text-align: center; display: block;">Read More</a>
               </div>
             </div>
           </div>
@@ -178,7 +215,7 @@
           <div class="card" style="align-items: flex-start; text-align: left; padding: 0; overflow: hidden;">
             <a href="blog-single.html" style="width: 100%;"><img src="assets/images/blog-travel.jpg" alt="Kite Travel"
                 style="margin: 0; border-radius: 0; aspect-ratio: 16/9;"></a>
-            <div style="padding: var(--space-3);">
+            <div style="padding: var(--space-3); display: flex; flex-direction: column; flex: 1;">
               <span
                 style="background:var(--primary) ; color: white; padding: 4px 8px; border-radius: 4px; font-size: 0.75rem; text-transform: uppercase; font-weight: bold; margin-bottom: 12px; display: inline-block;">Travel</span>
               <a href="blog-single.html">
@@ -187,10 +224,14 @@
               </a>
               <p style="color: var(--text-muted); margin-bottom: 16px;">From Tarifa to Lefkada — our favourite spots to
                 pack your kite and explore the wind across the continent.</p>
-              <div
-                style="display: flex; justify-content: space-between; align-items: center; width: 100%; color: var(--text-muted); font-size: 0.875rem;">
-                <span>By Diego Costa</span>
-                <span>Apr 05, 2026 • 9 min read</span>
+              <div style="margin-top: auto;">
+                <div
+                  style="display: flex; justify-content: space-between; align-items: center; width: 100%; color: var(--text-muted); font-size: 0.875rem; margin-bottom: 16px;">
+                  <span>By Diego Costa</span>
+                  <span>Apr 05, 2026 • 9 min read</span>
+                </div>
+                <a href="blog-single.html" class="btn btn-primary"
+                  style="width: 100%; text-align: center; display: block;">Read More</a>
               </div>
             </div>
           </div>
@@ -198,6 +239,143 @@
         </div>
       </div>
     </section>
+    <!-- FAQ Section -->
+    <section style="background-color: var(--secondary);">
+      <div class="container">
+        <h2>Frequently Asked Questions</h2>
+        <p class="subtext">Everything you want to know about our blog and content.</p>
+        <div class="faq-list">
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>How often do you publish new articles?</span>
+              <i class="ph ph-plus faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+              <p>We publish new content every week covering spots, gear reviews, training tips, safety guides, and
+                travel stories. If you want to stay up to date, follow us on Instagram or subscribe to our newsletter
+                via the contact page — we send a roundup at the start of each month.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Can I contribute a guest post or spot review?</span>
+              <i class="ph ph-plus faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+              <p>Absolutely — we love hearing from the community. If you have a story, a kite travel experience, or a
+                gear review you'd like to share, get in touch through our contact page. Our editorial team reviews all
+                submissions and will get back to you within a few days.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Are the gear reviews sponsored or independent?</span>
+              <i class="ph ph-plus faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+              <p>All gear reviews are based on real in-water testing by our instructors and students. We are not paid to
+                endorse any specific brand, though we do use equipment from Duotone, North, and Cabrinha in our school.
+                Any partnership or affiliate relationship is always disclosed clearly at the top of the article.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <style>
+      .faq-list {
+        max-width: 800px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-2);
+      }
+
+      .faq-item {
+        border: 1px solid var(--card-border);
+        border-radius: var(--radius);
+        background: var(--card-bg);
+        overflow: hidden;
+      }
+
+      .faq-question {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: var(--space-3) var(--space-4);
+        background: none;
+        border: none;
+        cursor: pointer;
+        color: var(--text-color);
+        font-family: var(--font-body);
+        font-size: 1.05rem;
+        font-weight: 600;
+        text-align: left;
+        gap: var(--space-3);
+        transition: background var(--transition);
+      }
+
+      .faq-question:hover {
+        background: var(--secondary);
+      }
+
+      .faq-question[aria-expanded="true"] {
+        color: var(--primary);
+      }
+
+      .faq-icon {
+        font-size: 1.25rem;
+        flex-shrink: 0;
+        transition: transform var(--transition);
+        color: var(--primary);
+      }
+
+      .faq-question[aria-expanded="true"] .faq-icon {
+        transform: rotate(45deg);
+      }
+
+      .faq-answer {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.4s ease, padding 0.3s ease;
+        padding: 0 var(--space-4);
+      }
+
+      .faq-answer p {
+        color: var(--text-muted);
+        font-size: 0.975rem;
+        line-height: 1.75;
+        padding-bottom: var(--space-3);
+      }
+
+      .faq-item.open .faq-answer {
+        max-height: 300px;
+        padding-top: 0;
+      }
+    </style>
+
+    <script>
+      document.querySelectorAll('.faq-question').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const item = btn.closest('.faq-item');
+          const isOpen = item.classList.contains('open');
+          document.querySelectorAll('.faq-item').forEach(i => {
+            i.classList.remove('open');
+            i.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+          });
+          if (!isOpen) {
+            item.classList.add('open');
+            btn.setAttribute('aria-expanded', 'true');
+          }
+        });
+      });
+    </script>
+
   </main>
 
   <footer class="footer">

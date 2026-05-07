@@ -131,6 +131,19 @@
               watersports.</p>
             <a href="lessons.html" class="btn btn-outline btn-full">Learn More</a>
           </div>
+          <div class="card">
+            <img src="assets/images/discipline-landboarding.jpg" alt="Kite Landboarding" loading="lazy">
+            <h3 class="card-title">Kite Landboarding</h3>
+            <p class="card-body">Take the power of the kite onto land. High speed thrills across any open terrain.</p>
+            <a href="lessons.html" class="btn btn-outline btn-full">Learn More</a>
+          </div>
+          <div class="card">
+            <img src="assets/images/discipline-snowkiting.jpg" alt="Snowkiting" loading="lazy">
+            <h3 class="card-title">Snowkiting</h3>
+            <p class="card-body">Harness the wind across snow and ice. The most exhilarating way to explore winter
+              landscapes.</p>
+            <a href="lessons.html" class="btn btn-outline btn-full">Learn More</a>
+          </div>
         </div>
       </div>
     </section>
@@ -221,6 +234,115 @@
         </div>
       </div>
     </section>
+    <!-- Gear We Ride -->
+    <section style="background: #111111; padding: var(--space-12) var(--space-3);">
+      <div class="container">
+        <p
+          style="text-align: center; font-size: 13px; letter-spacing: 4px; text-transform: uppercase; color: #666; font-family: var(--font-body); font-weight: 500; margin-bottom: 12px;">
+          Our Equipment Partners</p>
+        <h2 style="color: #fff; margin-bottom: var(--space-8);">Gear We <span style="color: var(--primary);">Ride</span>
+        </h2>
+        <div class="brands-grid">
+          <div class="brand-cell">
+            <div class="brand-name">Duotone</div>
+            <div class="brand-type">Kites · Boards · Bars</div>
+          </div>
+          <div class="brand-cell">
+            <div class="brand-name">North</div>
+            <div class="brand-type">Kites · Wings · Foils</div>
+          </div>
+          <div class="brand-cell">
+            <div class="brand-name">Cabrinha</div>
+            <div class="brand-type">Kites · Boards · Foils</div>
+          </div>
+          <div class="brand-cell">
+            <div class="brand-name">Mystic</div>
+            <div class="brand-type">Wetsuits · Harnesses</div>
+          </div>
+          <div class="brand-cell">
+            <div class="brand-name">Ion</div>
+            <div class="brand-type">Harnesses · Protection</div>
+          </div>
+          <div class="brand-cell">
+            <div class="brand-name">Manera</div>
+            <div class="brand-type">Wetsuits · Accessories</div>
+          </div>
+        </div>
+        <p
+          style="text-align: center; font-family: var(--font-body); font-size: 15px; color: #555; border-top: 1px solid #222; padding-top: var(--space-4); margin-top: 0;">
+          <strong style="color: #888; font-weight: 500;">Updated every season.</strong> We only teach on gear we trust.
+        </p>
+      </div>
+    </section>
+
+    <style>
+      .brands-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2px;
+        margin-bottom: var(--space-4);
+      }
+
+      .brand-cell {
+        border: 1px solid #222;
+        padding: 40px 24px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        transition: background 0.25s ease, border-color 0.25s ease;
+      }
+
+      .brand-cell:hover {
+        background: var(--primary);
+        border-color: var(--primary);
+      }
+
+      .brand-cell:hover .brand-name {
+        color: #fff;
+      }
+
+      .brand-cell:hover .brand-type {
+        color: rgba(255, 255, 255, 0.65);
+      }
+
+      .brand-name {
+        font-family: var(--font-heading);
+        font-size: 48px;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        color: #fff;
+        line-height: 1;
+        transition: color 0.25s ease;
+      }
+
+      .brand-type {
+        font-size: 11px;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        color: #555;
+        font-family: var(--font-body);
+        font-weight: 500;
+        transition: color 0.25s ease;
+      }
+
+      @media (max-width: 768px) {
+        .brands-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        .brand-name {
+          font-size: 36px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .brands-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
 
     <section class="banner-iko"
       style="background: url('assets/images/banner-certification.png') center/100% 100% no-repeat; position: relative; color: white; padding: var(--space-12) 0;">
@@ -561,6 +683,12 @@
     @media (max-width: 600px) {
       .services-grid {
         grid-template-columns: 1fr;
+      }
+    }
+
+    @media (min-width: 1440px) {
+      .services-grid {
+        grid-template-columns: repeat(3, 1fr);
       }
     }
   </style>
